@@ -30,20 +30,20 @@ const TaskInput = () => {
   };
 
   return (
-    <div className="mt-4">
+    <div className="mt-4 w-full flex justify-between">
       <input
         type="text"
         placeholder="Enter a new task"
         value={taskText}
         onChange={handleInputChange}
         onKeyPress={handleKeyPress}
-        className="p-2 border border-gray-300 rounded mr-2"
+        className="p-1 border border-gray-300 text-black  text-sm w-full"
       />
       <button
         onClick={handleAddTask}
-        className="bg-blue-500 text-white p-2 rounded"
+        className="text-sm font-bold bg-blue-950 text-white p-2   uppercase w-20"
       >
-        Add Task
+        Add
       </button>
     </div>
   );

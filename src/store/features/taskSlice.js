@@ -6,11 +6,6 @@ const initialState = {
   tasks: [],
 };
 
-const persistConfig = {
-  key: "tasks",
-  storage,
-};
-
 const tasksSlice = createSlice({
   name: "tasks",
   initialState,
@@ -38,6 +33,4 @@ const tasksSlice = createSlice({
 });
 
 export const { addTask, deleteTask, editTask, toggleTask } = tasksSlice.actions;
-
-const persistedReducer = persistReducer(persistConfig, tasksSlice.reducer);
-export default persistedReducer;
+export default tasksSlice.reducer;
