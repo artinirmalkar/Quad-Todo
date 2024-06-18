@@ -25,30 +25,32 @@ const TaskList = () => {
       {tasks.map((task) => (
         <div
           key={task.id}
-          className="flex flex-wrap gap-3 w-full items-center mb-2 bg-white border shadow-md py-2 px-2 lg:px-10"
+          className="flex flex-wrap gap-3 w-full  justify-between mb-2 bg-white border shadow-md py-2 px-2 lg:px-10"
         >
-          <input
-            type="checkbox"
-            checked={task.completed}
-            onChange={() => dispatch(toggleTask(task.id))}
-            className="mr-5 rounded-none"
-          />
-          {editingTask === task.id ? (
+          <div>
             <input
-              type="text"
-              value={taskText}
-              onChange={(e) => setTaskText(e.target.value)}
-              className="mr-2 p-1 border border-gray-300 rounded  w-full text-sm text-slate-700"
+              type="checkbox"
+              checked={task.completed}
+              onChange={() => dispatch(toggleTask(task.id))}
+              className="mr-5 rounded-none"
             />
-          ) : (
-            <span
-              className={`text-sm font-bold text-slate-700 capitalize flex-1 ${
-                task.completed ? "line-through" : ""
-              }`}
-            >
-              {task.text}
-            </span>
-          )}
+            {editingTask === task.id ? (
+              <input
+                type="text"
+                value={taskText}
+                onChange={(e) => setTaskText(e.target.value)}
+                className="mr-2 p-1 border border-gray-300 rounded  w-full text-sm text-slate-700"
+              />
+            ) : (
+              <span
+                className={`text-sm font-bold text-slate-700 capitalize  ${
+                  task.completed ? "line-through" : ""
+                }`}
+              >
+                {task.text}
+              </span>
+            )}
+          </div>
           <div>
             {editingTask === task.id ? (
               <button
