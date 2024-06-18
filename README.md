@@ -1,21 +1,31 @@
 # React To-Do Application
 
-## Prerequisites
+## Project Overview
 
-Before running this project, ensure you have the following installed on your system:
+Welcome to the React To-Do Application project! This application allows users to manage tasks by adding, editing, and deleting them dynamically. It provides a simple and intuitive interface for organizing tasks efficiently.
 
-- **Node.js** (v14 or later)
-- **npm** (v6 or later)
+## Project Links
 
-## Setup and Installation
+- **Project URL:** [React To-Do Application](https://todo-application.vercel.app/)
+- **GitHub Repository:** [React To-Do GitHub](https://github.com/artinirmalkar/todo)
 
-To set up and run the application, follow these steps:
+## Features and Technologies
 
-1. **Clone the repository:**
+### Technologies Used
+
+- **React:** Utilized for building a dynamic and responsive user interface using react-redux, redux-toolkit.
+- **CSS:** Styling is done using Tailwind-CSS for a clean and minimalistic design.
+- **Local Storage:** Tasks are persisted in the browser's local storage for data persistence between sessions.
+
+## How to Run the Project
+
+To run the React To-Do Application locally, follow these steps:
+
+1. **Clone the GitHub repository:**
 
    ```bash
    git clone https://github.com/artinirmalkar/todo.git
-   cd todo-app
+   cd todo
    ```
 
 2. **Install dependencies:**
@@ -30,26 +40,110 @@ To set up and run the application, follow these steps:
    npm start
    ```
 
-4. **Access the application:**
-   - Open your web browser and navigate to `http://localhost:3000` to view and interact with the application.
+   The application will be accessible at `http://localhost:3000/`.
 
-## Testing the Application
+## Functionality
 
-To manually test the functionality of the application, perform the following actions:
+1. **Task Management:**
 
-1. **Add Task:**
+   - **Add Task:** Enter a task and press Enter or click the "Add" button to add it to the list.
+   - **Edit Task:** Click on the task text to edit it directly in place.
+   - **Delete Task:** Click the "Delete" button next to a task to remove it from the list.
 
-   - Enter a task in the input field.
-   - Press the "Add" button or hit Enter.
-   - Confirm that the task appears in the list.
+2. **Data Persistence:**
 
-2. **Edit Task:**
+   - Tasks are stored in the browser's local storage, allowing them to persist even after the browser is closed.
 
-   - Click the "Edit" button next to a task.
-   - Modify the task text in the input field that appears.
-   - Press the "Save" button.
-   - Confirm that the task text is updated in the list.
+## Code Structure and Comments
 
-3. **Delete Task:**
-   - Click the "Delete" button next to a task.
-   - Confirm that the task is removed from the list.
+- The codebase is organized following React best practices for modularity and maintainability.
+- Comments are provided where necessary to explain complex logic or functionality.
+
+## Testing
+
+To ensure the application functions correctly, manually test the following:
+
+- **Adding tasks:** Verify that tasks are added to the list correctly.
+- **Editing tasks:** Ensure edited tasks update in the list.
+- **Deleting tasks:** Confirm that tasks are removed from the list upon deletion.
+
+## Hosting
+
+The project is hosted on Netlify and can be accessed at [React To-Do Application](https://todo-application.netlify.app/).
+
+Thank you for checking out the React To-Do Application! If you have any questions or feedback, feel free to reach out.
+
+# React To-Do Application
+
+## Project Overview
+
+Welcome to the React To-Do Application project! This application allows users to manage tasks by adding, editing, and deleting them dynamically. It provides a simple and intuitive interface for organizing tasks efficiently.
+
+## Project Links
+
+- **Project URL:** [React To-Do Application](https://todo-application.vercel.app/)
+- **GitHub Repository:** [React To-Do GitHub](https://github.com/artinirmalkar/todo)
+
+## Features and Technologies
+
+### Technologies Used
+
+- **React:** Utilized for building a dynamic and responsive user interface.
+- **CSS:** Styling is done using CSS for a clean and minimalistic design.
+- **Local Storage:** Tasks are persisted in the browser's local storage for data persistence between sessions.
+
+## How to Run the Project
+
+To run the React To-Do Application locally, follow these steps:
+
+1. **Clone the GitHub repository:**
+
+   ```bash
+   git clone https://github.com/artinirmalkar/todo.git
+   cd todo
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the application:**
+
+   ```bash
+   npm start
+   ```
+
+   The application will be accessible at `http://localhost:3000/`.
+
+## Functionality
+
+1. **Task Management:**
+
+   - **Add Task:** Enter a task and press Enter or click the "Add" button to add it to the list.
+   - **Edit Task:** Click on the task text to edit it directly in place.
+   - **Delete Task:** Click the "Delete" button next to a task to remove it from the list.
+
+2. **Data Persistence:**
+
+   - Tasks are stored in the browser's local storage, allowing them to persist even after the browser is closed.
+
+## Code Structure and Comments
+
+- The codebase is organized following React best practices for modularity and maintainability.
+- Comments are provided where necessary to explain complex logic or functionality.
+
+## Testing
+
+To ensure the application functions correctly, manually test the following:
+
+- **Adding tasks:** Verify that tasks are added to the list correctly.
+- **Editing tasks:** Ensure edited tasks update in the list.
+- **Deleting tasks:** Confirm that tasks are removed from the list upon deletion.
+
+## Hosting
+
+The project is hosted on Vercel and can be accessed at [React To-Do Application](https://todo-application.vercel.app/).
+
+Thank you for checking out the React To-Do Application! If you have any questions or feedback, feel free to reach out.
