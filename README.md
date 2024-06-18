@@ -7,7 +7,7 @@ Welcome to the React To-Do Application project! This application allows users to
 ## Project Links
 
 - **Project URL:** [React To-Do Application](https://quad-todo.netlify.app/)
-- **GitHub Repository:** [React To-Do GitHub](https://github.com/artinirmalkar/todo)
+- **GitHub Repository:** [React To-Do GitHub](https://github.com/artinirmalkar/Quad-Todo)
 
 ## Features and Technologies
 
