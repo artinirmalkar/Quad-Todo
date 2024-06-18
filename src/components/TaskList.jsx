@@ -27,7 +27,7 @@ const TaskList = () => {
           key={task.id}
           className="flex flex-wrap gap-3 w-full  justify-between mb-2 bg-white border shadow-md py-2 px-2 lg:px-10"
         >
-          <div>
+          <div className="flex gap-2 w-full">
             <input
               type="checkbox"
               checked={task.completed}
