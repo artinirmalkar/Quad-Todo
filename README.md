@@ -6,7 +6,7 @@ Welcome to the React To-Do Application project! This application allows users to
 
 ## Project Links
 
-- **Live Project URL:** [React To-Do Application](https://quad-todo.netlify.app/)
+- **Live Project URL:** [React To-Do Application](https://quadtodo.netlify.app/)
 - **GitHub Repository:** [React To-Do GitHub](https://github.com/artinirmalkar/Quad-Todo)
 
 ## Features and Technologies
@@ -69,6 +69,6 @@ To ensure the application functions correctly, manually test the following:
 
 ## Hosting
 
-The project is hosted on Vercel and can be accessed at [React To-Do Application](https://quad-todo.netlify.app/).
+The project is hosted on Vercel and can be accessed at [React To-Do Application](https://quadtodo.netlify.app/).
 
 Thank you for checking out the React To-Do Application! If you have any questions or feedback, feel free to reach out.
