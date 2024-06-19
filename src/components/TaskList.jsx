@@ -25,25 +25,25 @@ const TaskList = () => {
       {tasks.map((task) => (
         <div
           key={task.id}
-          className="flex flex-wrap gap-3 w-full  justify-between mb-2 bg-white border shadow-md py-2 px-2 lg:px-10"
+          className="flex flex-wrap gap-3 w-full justify-between mb-2 bg-white border shadow-md py-2 px-2 lg:px-10"
         >
           <div className="flex gap-1 w-full">
             <input
               type="checkbox"
               checked={task.completed}
               onChange={() => dispatch(toggleTask(task.id))}
-              className="mr-5 rounded-none"
+              className="mr-2 rounded-none"
             />
             {editingTask === task.id ? (
               <input
                 type="text"
                 value={taskText}
                 onChange={(e) => setTaskText(e.target.value)}
-                className="mr-2 p-1 border border-gray-300 rounded  w-full text-sm text-slate-700"
+                className="mr-2 p-1 border border-gray-300 rounded w-full text-sm text-slate-700"
               />
             ) : (
               <span
-                className={`text-sm font-bold text-slate-700 capitalize  ${
+                className={`text-sm font-bold text-slate-700 capitalize ${
                   task.completed ? "line-through" : ""
                 }`}
               >
@@ -51,28 +51,34 @@ const TaskList = () => {
               </span>
             )}
           </div>
-          <div>
-            {editingTask === task.id ? (
+
+          <div className="flex justify-between items-center w-full">
+            <div>
+              {editingTask === task.id ? (
+                <button
+                  onClick={() => handleSave(task.id)}
+                  className="border-2 border-blue-950 text-blue-950 px-5 py-0.5 text-xs font-bold rounded-2xl mr-2 hover:bg-blue-950 hover:text-white uppercase"
+                >
+                  Save
+                </button>
+              ) : (
+                <button
+                  onClick={() => handleEdit(task)}
+                  className="border-2 border-blue-950 text-blue-950 px-5 py-0.5 text-xs font-bold rounded-2xl mr-2 hover:bg-blue-950 hover:text-white uppercase"
+                >
+                  Edit
+                </button>
+              )}
               <button
-                onClick={() => handleSave(task.id)}
-                className="border-2 border-blue-950 text-blue-950 px-5 py-0.5 text-xs font-bold rounded-2xl mr-2 hover:bg-blue-950 hover:text-white uppercase"
+                onClick={() => dispatch(deleteTask(task.id))}
+                className="border-2 border-red-700 text-red-700 px-5 py-0.5 text-xs font-bold rounded-2xl hover:bg-red-700 hover:text-white uppercase"
               >
-                Save
+                Delete
               </button>
-            ) : (
-              <button
-                onClick={() => handleEdit(task)}
-                className="border-2 border-blue-950 text-blue-950 px-5 py-0.5 text-xs font-bold rounded-2xl mr-2 hover:bg-blue-950 hover:text-white uppercase"
-              >
-                Edit
-              </button>
-            )}
-            <button
-              onClick={() => dispatch(deleteTask(task.id))}
-              className="border-2 border-red-700 text-red-700 px-5 py-0.5 text-xs font-bold rounded-2xl hover:bg-red-700 hover:text-white uppercase"
-            >
-              Delete
-            </button>
+            </div>
+            <div className="text-xs text-gray-500">
+              {new Date(task.createdAt).toLocaleString()}
+            </div>
           </div>
         </div>
       ))}

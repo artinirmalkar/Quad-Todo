@@ -33,11 +33,11 @@ const TaskInput = () => {
     <div className="mt-4 w-full flex justify-between">
       <input
         type="text"
-        placeholder="Enter a new task"
+        placeholder="Add New Task (e.g. Creating a todo application)"
         value={taskText}
         onChange={handleInputChange}
         onKeyPress={handleKeyPress}
-        className="p-1 border border-gray-300 text-black  text-sm w-full"
+        className="p-1 px-5 border border-gray-300 text-black  text-sm w-full"
       />
       <button
         onClick={handleAddTask}

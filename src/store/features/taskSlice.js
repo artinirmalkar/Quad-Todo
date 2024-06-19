@@ -9,7 +9,10 @@ const tasksSlice = createSlice({
   initialState,
   reducers: {
     addTask: (state, action) => {
-      state.tasks.push(action.payload);
+      state.tasks.push({
+        ...action.payload,
+        createdAt: new Date().toISOString(),
+      });
     },
     deleteTask: (state, action) => {
       state.tasks = state.tasks.filter((task) => task.id !== action.payload);
